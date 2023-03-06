@@ -1,0 +1,59 @@
+/* 
+*   Programmer = Desginer = Mayank
+*   css/style.css
+*   Website 1 "School"
+*/
+
+@import "menu.css";
+@import "index.css";
+@import "header.css";
+@import "about.css";
+@import "contact.css";
+@import "form.css";
+@import "response.css";
+/*
+    import ---------------------------------------------------
+*/
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'calibri','Gabriola','script mt';
+    text-decoration: none;
+    color:#000;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+}
+:root
+{
+    --black:#142536;
+    --dark:#030303;
+    --white:white;
+    --light:#eee;
+    --clr1:khaki;
+    --clr2:wheat;
+    --gold:goldenrod;
+    --red:#dd1226;
+    --bg1:linear-gradient(to left, var(--black), var(--dark));
+    --bg2:rgba(0,0,0,0.8);
+    --nw:400PX;
+}
+body
+{
+    overflow-y: hidden;
+    overflow: auto;
+    scroll-behavior: smooth;
+}
+.flex
+{
+    display: flex;
+}
+.flex:first-child
+{
+    width: 50%;
+}
+.flex:last-child
+{
+    width: 50%;
+}

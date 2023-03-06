@@ -1,0 +1,333 @@
+/* 
+*   Programmer = Desginer = Mayank
+*   css/index.css
+*   Website 1 "School"
+*/
+
+/*
+    MAIN CSS ------------------------------------------------
+*/
+main
+{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100vh auto auto auto auto;
+}
+::-webkit-scrollbar
+{
+    background: transparent;
+    width: 0.5rem;
+}
+::-webkit-scrollbar-thumb
+{
+    background: var(--black);
+}
+::-webkit-scrollbar-thumb:hover
+{
+    background: var(--clr1);
+}
+/*
+    HOME CSS ------------------------------------------------
+*/
+#home
+{
+    background: var(--bg2) url('../pic/college.jpg') fixed no-repeat;
+    background-size: cover;
+    background-blend-mode: overlay;
+    clip-path: polygon(0%0%,0%75%,50%100%,100%75%,100%0%);
+}
+.center_frame
+{
+    margin:auto;
+    padding: 1rem;
+    width: 50%;
+    color: var(--white);
+    text-align: center;
+}
+#symbol
+{
+    padding: 1rem;
+    margin: 5vh;
+    width: 100px;
+    height: auto;
+    object-fit: cover;
+    background: var(--white);
+}
+h1
+{
+    margin: 1rem auto;
+    color:var(--white);
+}
+h5
+{
+    padding: 2rem;
+    font: 20px 'Gabriola';
+    font-weight: normal;
+    color: var(--light);
+}
+h5::before, h5::after
+{
+    content:'"';
+    font-size: 3vw;
+}
+.btn_group
+{
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+.btn
+{
+    padding: 1rem 3rem ;
+    font-size: 18px;
+    color:var(--white);
+    border:2px inset var(--white);
+}
+.btn:hover
+{
+    transition: all linear 0.5s;
+    color: var(--dark);
+    background: var(--clr1);
+    border-style: none;
+    border-radius:2rem;
+}
+/*
+    CORSES CSS ------------------------------------------------
+*/
+#corse
+{
+    min-height: 100vh;
+}
+#subject
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+.study
+{
+    padding:1rem;
+    margin: 1rem 3rem;
+    width: 200px;
+    height: 250px;
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+.study:hover
+{
+    box-shadow: 2px 3px 5px var(--black);
+}
+.study img
+{
+    width: 100px;
+    height: 100px;
+}
+.study h4
+{
+    font-size: 18px;
+}
+.study h6
+{
+    color: var(--black);
+    font-size: 16px;
+}
+/*
+    CLASS CSS ------------------------------------------------
+*/
+#class
+{
+    height:auto;
+}
+#room
+{
+    margin: 5rem auto;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap-reverse;
+    position: relative;
+}
+#room ul
+{
+    width: 50%;
+    list-style: none;
+    padding: 1rem;
+    border:1px solid var(--dark);
+    border-radius: 5px;
+    background: var(--black);
+    clip-path:polygon(0%0%,0%100%,90%100%,100%0%);
+}
+#room ul li
+{
+    color: var(--clr2);
+    font-size: 18px;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 5px;
+}
+#room ul li:nth-child(5)
+{
+    border:1px solid var(--light) ;
+}
+#room #picture
+{
+    width: 50%;
+    height: auto;
+    clip-path:polygon(10%0%,0%100%,100%100%,100%0%);
+}
+/*
+    FACILITY CSS ------------------------------------------------
+*/
+#facility
+{
+    min-height: 100vh;
+}
+h2
+{
+    text-align: center;
+    padding: 3rem;
+}
+.service
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+}
+.serve
+{
+    margin: 3rem auto;
+    width: 300px;
+    border-bottom: 1px solid var(--black);
+}
+.serve:hover
+{
+    box-shadow: 2px 2px 5px var(--black);
+}
+.serve > img
+{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    clip-path: polygon(0%0%,100%0%,100%85%,0%100%);
+}
+h3
+{
+    padding: 1rem 2rem;
+    text-align: right;
+    font-family:'calibri';
+    border-right: 2rem solid var(--black);
+}
+p
+{
+    padding: 1rem;
+    font: 18px 'gabriola';
+    /* letter-spacing: 1px; */
+    word-spacing: 3px;
+    color: var(--black);
+}
+/*
+    FOOTER CSS ------------------------------------------------
+*/
+#footer
+{
+    display: grid;
+}
+#nav
+{
+    padding: 1rem;
+    background: var(--black);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-flow: row wrap-reverse;
+}
+.nav_item
+{
+    margin: 3rem 2rem;
+    width: 300px;
+    min-height: 500px;
+}
+.nav_item h4
+{
+    padding: 1rem;
+    color: var(--clr1);
+    font-size:20px;
+    font-weight: normal;
+}
+.nav_item a
+{
+    display: inline-block;
+    padding: 1rem;
+    width: 100%;
+    color:var(--light);
+    font-size: 16px;
+}
+.nav_item a:hover
+{
+    background: var(--dark);
+}
+#news
+{
+    height: 500px;
+    background: var(--white);
+    border-radius: 5px;
+    box-shadow: 2px 5px 10px var(--dark);
+}
+#news h2
+{
+    height:10%;
+    padding: 0.5rem;
+    height: 10%;
+    color: var(--dark);
+}
+#update
+{
+    height:90%;
+    overflow-y: scroll;
+}
+/* #update::-webkit-scrollbar
+{
+    background: transparent;
+    width: 5px;
+}
+#update::-webkit-scrollbar-thumb
+{
+    background: var(--black);
+} */
+#update > li
+{
+    padding: 0.5rem auto;
+    list-style: none;
+    border-top: 0.2px dotted var(--dark);
+}
+#update > li:hover
+{
+    background: var(--light);
+}
+#update a
+{
+    padding: 0.5rem;
+    color: var(--black);
+}
+#update a:hover
+{
+    background: transparent;
+}
+.time
+{
+    padding: 0.5rem;
+    color: var(--red);
+    text-align: right;
+}
+.copy
+{
+    text-align: center;
+    line-height: 10vh;
+    color:var(--white);
+    background: var(--dark);
+}

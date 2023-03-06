@@ -1,0 +1,206 @@
+/* 
+*   Programmer = Desginer = Mayank
+*   css/about.css
+*   Website 1 "School"
+*/
+#about
+{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto;
+}
+/*
+    COLLEGE CSS ----------------------------------------
+*/
+#college
+{
+    min-height: 100vh;
+}
+#college h2
+{
+    color: var(--black);
+}
+
+#intro
+{
+    display: flex;
+}
+#intro img
+{
+    padding: 3rem;
+    width: 50%;
+}
+#intro div
+{
+    width: 50%;
+}
+/*
+    HEAD CSS -------------------------------------------
+*/
+#head
+{
+    min-height: 100vh;
+}
+#heads
+{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.head_frame
+{
+    margin: 1rem;
+    width: 300px;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+}
+.head_frame .head_picture
+{
+    width: 300px;
+    height: 500px;
+    position:absolute;
+    z-index:1;
+}
+.head_frame .head_detail
+{
+    left: -300px;
+    width: 300px;
+    height: 500px;
+    background:var(--bg2);
+    transition: all linear 0.5s;
+    position:absolute;
+    z-index:2;
+}
+.head_frame .head_detail li
+{
+    list-style: none;
+    margin: 1rem;
+    font-size: 18px;
+    color:var(--light);
+}
+.head_frame:hover > .head_detail
+{
+    left:0;
+}
+.head_detail li:nth-child(1)
+{
+    color:var(--clr1);
+    font:bold 20px arial;
+}
+.head_detail li:nth-child(2)
+{
+    font:bold 18px 'calibri';
+}
+.head_detail li:nth-child(2)
+{
+    font:bold 18px 'calibri';
+}
+/*
+    TEACHER CSS -----------------------------------------
+*/
+#teacher
+{
+    min-height: 100vh;
+}
+#teachers
+{
+    display: flex;
+    justify-content: space-between;
+}
+#teachers button
+{
+    width: 10%;
+    text-align: center;
+    font-size: 3rem;
+    color: var(--dark);
+}
+#teachers button:hover
+{
+    color: var(--clr1);
+    background: var(--black);
+}
+#teacher_frame
+{
+    margin: auto;
+    width: 80%;
+    display: grid;
+    place-content: center;
+}
+#staff
+{
+    display: flex;
+    flex-flow: row wrap-reverse;
+}
+#teacher_picture
+{
+    width: 300px;
+    height: 500px;
+}
+#teacher_detail
+{
+    padding: 1rem;
+    width: 300px;
+    height: 500px;
+    background: var(--black);
+}
+#teacher_detail li
+{
+    list-style: none;
+    padding: 1rem;
+    color: var(--white);
+    font-size: 18px;
+}
+/*
+    TESTROMONIAL CSS -----------------------------------
+*/
+#testomonial
+{
+    height: 700px;
+}
+#student
+{
+    margin: auto;
+    width: auto;
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    box-sizing: unset;
+    overflow: scroll;
+}
+blockquote
+{
+    margin: 2rem auto;
+    width: 500px;
+    min-height: 300px;
+    background: var(--light);
+    text-align: center;
+    border-radius: 10px;
+}
+blockquote:hover
+{
+    box-shadow: 2px 5px 10px var(--black);
+}
+blockquote p
+{
+    margin: 1rem;
+    color: var(--dark);
+}
+blockquote p::after, p::before
+{
+    color: var(--dark);
+    content: '"';
+    font-size: 2rem;
+}
+blockquote b
+{
+    color: var(--dark);
+}
+blockquote .rate
+{
+    padding: 1rem;
+    color: var(--gold);
+    font-size: 2rem;
+}

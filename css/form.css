@@ -1,0 +1,60 @@
+/* 
+*   Programmer = Desginer = Mayank
+*   css/form.css
+*   Website 1 "School"
+*/
+
+/*
+    LOGIN CSS
+*/
+#login
+{
+    background: var(--bg2) url('../pic/book.jpg');
+    background-size: cover;
+    background-blend-mode: overlay;
+    min-height: 100vh;
+}
+#login_form
+{
+    padding: 1rem;
+    margin: 5rem auto;
+    width: 500px;
+    background: var(--black);
+    display: grid;
+    grid-gap:1rem;
+}
+#login_from h3
+{
+    color: var(--light);
+}
+#form_message
+{
+    padding: 1rem;
+    font-size: 18px;
+    color: var(--light);
+}
+.fld1
+{
+    padding: 1rem;
+    width: 100%;
+    font-size: 18px;
+}
+#grp_btn
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.btn1
+{
+    padding: 1rem;
+    width: 48%;
+    font-size: 18px;
+    font-weight: bold;
+    color:var(--black);
+    background: var(--clr1);
+}
+.btn1:hover
+{
+    background: var(--clr2);
+}

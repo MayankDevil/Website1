@@ -1,0 +1,60 @@
+/* 
+*   Programmer = Desginer = Mayank
+*   css/ressponse.css
+*   Website 1 "School"
+*/
+
+@media (max-width: 1200px)
+{
+
+}
+
+@media (max-width: 992px)
+{
+    #message
+    {
+        width: 100%;
+    }
+    #social
+    {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px)
+{
+    .center_frame
+    {
+        width: 80% !important;
+    }
+    #room ul
+    {
+        width: 100%;
+        clip-path: polygon(0%0%,0%100%,90%100%,100%50%,90%0%);
+
+    }
+    #room #picture
+    {
+        width: 100%;
+        clip-path: polygon(20%0%,0%50%,20%100%,100%100%,100%0%);
+    }
+    #title
+    {
+        width: 100%;
+        clip-path: polygon(20%0%,0%100%,100%100%,100%0%);
+    }
+}
+
+@media (max-width: 576px)
+{
+    .center_frame
+    {
+        width: 100% !important;
+        margin: 0;
+    }
+    #staff
+    {
+        justify-content: center;
+    }
+}
+  

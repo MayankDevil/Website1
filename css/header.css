@@ -1,0 +1,44 @@
+/* 
+*   Programmer = Desginer = Mayank
+*   css/header.css
+*   Website 1 "School"
+*/
+
+/*
+    HEADER CSS --------------------------------------
+    comman header of all file without index.html
+*/
+#header
+{
+    width: 95%;
+    padding: 1rem 3rem;
+    background: var(--light);
+    clip-path: polygon(0%0%,0%100%,98%100%,100%50%,98%0%);
+    box-shadow: 5px 5px 10px var(--dark);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#header h6
+{
+    color: var(--dark);
+    font-size: 30px;
+}
+#back_btn
+{
+    width: 3rem;
+    height: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    font-size: 2rem;
+    color: var(--dark);
+    border: 2px outset var(--black);
+    border-radius: 50%;
+}
+#back_btn:hover
+{
+    transition: all linear 0.5s;
+    transform: rotate(360deg);
+    border-style: inset;
+    color: var(--red);
+}
